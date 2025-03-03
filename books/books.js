@@ -3,3 +3,5 @@ const books = [
     {author:"Krisz Tanacs", title:"The glorious 133 days", year:2025},
     {author:"Marcell Csikos", title:"Jeno Kiss", year:2027},
 ]
+
+export default books
