@@ -17,7 +17,7 @@ router.get('/:id', (req, res) =>{
 
 router.post('/', (req, res) =>{
     const {author,title,year} = req.body
-    if (!author|titleel||!year){
+    if (!author|title||!year){
         return res.status(404).json({message: "Missing data"})
     }
     const newBook = {author,title,year};
@@ -31,7 +31,7 @@ router.put('/:id', (req, res) =>{
         return res.json({message:"Book not found"})
     }
     const {author,title,year} = req.body
-    if (!author|titleel||!year){
+    if (!author|title||!year){
         return res.status(404).json({message: "Missing data"})
     }
     res.status(200).json(books[id])
